@@ -1,2 +1,15 @@
-const ComponentName = () => <h1>Page Name</h1>;
-export default ComponentName;
+import React from 'react';
+import AboutImage from './AboutImage';
+import AboutContent from './AboutContent';
+
+const About = () => (
+    <div className="container">
+        <div className="row">
+            <AboutImage />
+            <AboutContent />
+        </div>
+    </div>
+);
+
+export default About;
+
