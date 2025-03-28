@@ -4,6 +4,7 @@ import AboutContent from './AboutContent';
 
 const About = () => (
     <div className="container">
+        <h1>About the Designer</h1>
         <div className="row">
             <AboutImage />
             <AboutContent />
