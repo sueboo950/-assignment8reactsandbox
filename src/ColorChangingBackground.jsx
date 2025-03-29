@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Navbar from './Navbar';
 
 const ColorChangingBackground = () => {
     const [color, setColor] = useState('white');
@@ -9,9 +10,13 @@ const ColorChangingBackground = () => {
     };
 
     return (
-        <div style={{ backgroundColor: color, height: '100vh' }} onClick={changeColor}>
-            <h1>Click to change background color</h1>
-        </div>
+        <>
+            <Navbar />
+            <h1>Let's Play with Colors.....</h1>
+            <div style={{ backgroundColor: color, height: '100vh' }} onClick={changeColor}>
+                <h1>Click to change background color</h1>
+            </div>
+        </>
     );
 };
 

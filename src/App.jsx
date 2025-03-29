@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import About from './components/About';
-import ContactUs from './components/ContactUs';
-import Counter from './components/Counter';
-import ColorChangingBackground from './components/ColorChangingBackground';
-import Calculator from './components/Calculator';
+import Home from './Home';
+import About from './About';
+import ContactUs from './ContactUs';
+import Counter from './Counter';
+import ColorChangingBackground from './ColorChangingBackground';
+import Calculator from './Calculator';
 
 const App = () => (
     <Router>

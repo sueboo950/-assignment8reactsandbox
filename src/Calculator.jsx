@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Navbar from './Navbar';
 
 const Calculator = () => {
     const [num1, setNum1] = useState('');
@@ -31,15 +32,31 @@ const Calculator = () => {
     };
 
     return (
-        <div>
-            <input type="number" value={num1} onChange={(e) => setNum1(e.target.value)} />
-            <input type="number" value={num2} onChange={(e) => setNum2(e.target.value)} />
-            <button onClick={() => calculate('+')}>+</button>
-            <button onClick={() => calculate('-')}>-</button>
-            <button onClick={() => calculate('*')}>*</button>
-            <button onClick={() => calculate('/')}>/</button>
-            <h2>Result: {result}</h2>
-        </div>
+        <>
+            <Navbar />
+            <h1>Calculator</h1>
+            <div>
+                <input
+                    type="number"
+                    value={num1}
+                    onChange={(e) => setNum1(e.target.value)}
+                    placeholder="Enter first number"
+                />
+                <input
+                    type="number"
+                    value={num2}
+                    onChange={(e) => setNum2(e.target.value)}
+                    placeholder="Enter second number"
+                />
+                <div>
+                    <button onClick={() => calculate('+')}>+</button>
+                    <button onClick={() => calculate('-')}>-</button>
+                    <button onClick={() => calculate('*')}>*</button>
+                    <button onClick={() => calculate('/')}>/</button>
+                </div>
+                <h2>Result: {result}</h2>
+            </div>
+        </>
     );
 };
 
